@@ -1,0 +1,172 @@
+html {
+    height: 100%;
+    background: radial-gradient(circle, #fff, #ccc)
+}
+
+.container {
+    height: 400px;
+    width: 600px;
+    background-color: #9ddefa;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 4px  rgb(118, 127, 133);
+    position: relative;
+    
+}
+
+#score {
+    width: fit-content;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    /* position: absolute; */
+    /* left: 510px; */
+    float: right;
+    border-radius: 10px;
+    font-size: 1.6em;
+    box-shadow: 3px 4px rgb(97, 7, 7);
+}
+
+#correct{
+    position: absolute;
+    left: 270px; 
+    color: white;
+    font-size: 2em;
+    background-color: rgb(17, 61, 207);
+    border-radius: 10px;
+    padding: 8px;
+    display: none;
+}
+
+#wrong {
+    position: absolute;
+    left: 270px;
+    color: white;
+    font-size: 2em;
+    background-color: rgb(219, 7, 7);
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+}
+
+#question {
+    width: 500px;
+    height: 120px;
+    background-color: #fff;
+    margin: 80px auto 10px auto ;
+    background-color: #4cb0db;
+    border-radius: 14px;
+    /* box-shadow: 3px 4px #728cdf; */
+    font-size: 90px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+}
+
+#instruction {
+    width: 500px;
+    height: 40px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 14px;
+    margin: 0 auto ;
+    line-height: 150%;
+    background-color: #0e465e;
+}
+
+#choices {
+    width: 500px;
+    height: 80px;
+    margin: 10px auto;
+    /* border: 2px solid black; */
+}
+
+.box{
+    width: 100px;
+    height: 60px;
+    float: left;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-right: 33.3px;
+    border-radius: 14px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 3.4em;
+    box-shadow: 3px 4px rgb(109, 105, 105) ;
+    position: relative;
+    transition: all 0.2s;
+}
+
+#box4{
+    margin-right: 0;
+}
+
+.box:hover {
+    background-color: rgb(102, 102, 240);
+    color: white;
+}
+.box:active {
+    box-shadow: 0 0 black;
+    top: 4px;
+    left: 3px;
+}
+
+#startreset{
+    color: white;
+    width: fit-content;
+    background: rgb(78, 75, 75);
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 3px rgb(151, 144, 144);
+    margin: 0 auto; 
+    font-weight: bold;
+    transition: background-color 0.6s;
+    position: relative;
+}
+
+
+#startreset:hover {
+    background-color: rgb(58, 57, 57);
+    cursor: pointer;
+}
+
+#startreset:active{
+    box-shadow: 0px 0px rgb(151, 144, 144);
+    top: 3px;
+    left: 1px;
+}
+
+#timeremaining{
+    color: white;
+    width: fit-content;
+    background: rgb(219, 12, 12);
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 370px;
+    left: 445px;
+    /* visibility: hidden; */
+    display: none;
+}
+
+#gameover {
+    width: 550px;
+    height: 200px;
+    background: linear-gradient(rgb(226, 17, 17 ), rgb(136, 8, 8));
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 2;
+    display: none; 
+}
